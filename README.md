@@ -4,9 +4,9 @@
 
 Since I cannot distribute Minecraft textures, you have to import them from the game files.
 
-To do this, go to C:\Users\<USERNAME>\AppData\Roaming\.minecraft\versions\<VERSION> and extract the jar file using a program like winrar.
+To do this, go to C:\Users\USERNAME\AppData\Roaming\.minecraft\versions\VERSION and extract the jar file using a program like winrar.
 
-Then choose the "block" folder in \<VERSION>\assets\minecraft\textures when prompted. 
+Then choose the "block" folder in \VERSION\assets\minecraft\textures when prompted. 
 
 
 ![r](https://user-images.githubusercontent.com/20736715/119271101-0d8e0380-bbce-11eb-914d-f1b1ae3234b4.png)
