@@ -28,7 +28,7 @@ vector<block> blocks;
 
 BlockMatcher::BlockMatcher(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::BlockMatcher)
+        , ui(new Ui::BlockMatcher)
 {
     ui->setupUi(this);
 
@@ -131,6 +131,24 @@ BlockMatcher::BlockMatcher(QWidget *parent)
 
                 //copy file to folder
                 QFile::copy(fileInfo.filePath(), ("./textures/" + fileInfo.fileName()));
+
+
+
+
+
+                //creates image from texture
+                QImage img("./textures/" + fileInfo.fileName());
+
+
+                //crops textures that are bigger than 16x16
+                QRect cropArea(0, 0, 16, 16);
+                img = img.copy(cropArea);
+
+
+                //saves cropped texture
+                img.save("./textures/" + fileInfo.fileName());
+
+
 
 
                 //gets average color
@@ -328,13 +346,6 @@ void BlockMatcher::displayByRGB(){
 
 
 
-
-        //crops textures that are bigger than 16x16
-        QRect cropArea(0, 0, 16, 16);
-        img = img.copy(cropArea);
-
-
-
         //scales texture
         QPixmap texPixmap;
         texPixmap = texPixmap.fromImage(img.scaled(100, 100, Qt::IgnoreAspectRatio,Qt::FastTransformation));
@@ -467,8 +478,31 @@ void BlockMatcher::on_importData_clicked()
             if(ext == "png"){
 
 
+
+
+
+
+
+
             //copy file to folder
             QFile::copy(fileInfo.filePath(), ("./textures/" + fileInfo.fileName()));
+
+
+
+            //creates image from texture
+            QImage img("./textures/" + fileInfo.fileName());
+
+
+            //crops textures that are bigger than 16x16
+            QRect cropArea(0, 0, 16, 16);
+            img = img.copy(cropArea);
+
+
+            //saves cropped texture
+            img.save("./textures/" + fileInfo.fileName());
+
+
+
 
 
             //gets average color
