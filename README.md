@@ -19,3 +19,12 @@ Then choose the "block" folder in \\<VERSION\>\assets\minecraft\textures when pr
 
 
 ![b](https://user-images.githubusercontent.com/20736715/119271112-154da800-bbce-11eb-9add-bce27aad86b4.png)
+
+
+
+### COPYRIGHT
+
+Copyright (C) 2019-2026 George Hunter Shipman
+
+This project is licensed under the GNU General Public License v3.0.
+See the LICENSE file for details.
