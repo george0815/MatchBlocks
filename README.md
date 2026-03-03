@@ -24,4 +24,4 @@ Then choose the "block" folder in \\<VERSION\>\assets\minecraft\textures when pr
 
 ### COPYRIGHT
 
-Copyright (C) 2019-2026 George Hunter Shipman
+Copyright (C) 2021-2026 George Hunter Shipman
